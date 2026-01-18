@@ -1,0 +1,529 @@
+/* =========================================
+   1. Design Tokens & Reset
+   ========================================= */
+:root {
+  --primary: #1C2E4A;
+  --accent: #2563EB;
+  --success: #3DC47E;
+  --danger: #FF4D6B;
+  --surface: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 6px 14px rgba(0,0,0,0.08);
+  --shadow-hover: 0 12px 20px rgba(0,0,0,0.12);
+
+  --radius-card: 14px;
+  --radius-sm: 8px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--surface);
+  color: var(--text-main);
+}
+
+/* =========================================
+   2. App Layout
+   ========================================= */
+.app-container {
+  width: 100vw;
+  padding: 20px 24px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   3. Controls Bar
+   ========================================= */
+.controls-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.view-toggles {
+  display: flex;
+  background: white;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #E2E8F0;
+}
+
+.view-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.view-btn.active {
+  background: var(--accent);
+  color: white;
+}
+
+.filter-btn {
+  background: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+/* =========================================
+   4. FILTER BAR (FIXED & PROFESSIONAL)
+   ========================================= */
+.filter-panel {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+
+  box-shadow: var(--shadow-md);
+  border: 1px solid #E5E7EB;
+}
+
+/* Each filter group */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 160px;
+}
+
+.filter-group label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #CBD5E1;
+  font-size: 0.9rem;
+  background: #F9FAFB;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: white;
+}
+
+/* =========================================
+   5. Job Grid
+   ========================================= */
+.job-grid {
+  width: 100%;
+}
+
+/* GRID VIEW */
+.job-grid.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1280px) {
+  .job-grid.grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+  .job-grid.grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .job-grid.grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================
+   6. Job Card
+   ========================================= */
+.job-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
+  border: 1px solid #F1F5F9;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* =========================================
+   7. LIST / COLUMN VIEW
+   ========================================= */
+.job-grid:not(.grid) {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.job-grid:not(.grid) .job-card {
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 18px;
+  min-height: 88px;
+}
+
+/* Sections */
+.job-grid:not(.grid) .card-header { flex: 2; }
+.job-grid:not(.grid) .card-tags { flex: 2; }
+.job-grid:not(.grid) .match-ring { flex-shrink: 0; }
+.job-grid:not(.grid) .card-actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* =========================================
+   8. Card Elements
+   ========================================= */
+.job-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.job-company {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: #F1F5F9;
+  padding: 4px 8px;
+  font-size: 0.72rem;
+  border-radius: 6px;
+}
+
+.match-ring {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(closest-side, white 78%, transparent 79%),
+    conic-gradient(var(--success) var(--score), #E2E8F0 0);
+}
+
+/* =========================================
+   9. Buttons
+   ========================================= */
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #1D4ED8;
+}
+
+.btn-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  background: white;
+  cursor: pointer;
+}
+
+/* =========================================
+   10. Load More
+   ========================================= */
+.load-more-btn {
+  display: block;
+  margin: 36px auto;
+  padding: 12px 32px;
+  border-radius: 999px;
+  border: 1px solid #E2E8F0;
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Toolbar Layout */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.toolbar-left {
+  display: flex;
+  gap: 10px;
+}
+
+.view-toggles button {
+  margin-left: 5px;
+}
+
+/* Drawers (Filter & Saved) */
+.drawer {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-drawer {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.saved-drawer {
+  background-color: #f0f8ff; /* Light blue */
+  border: 2px solid #007bff;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.range-filters {
+  display: flex;
+  gap: 20px;
+}
+
+.range-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grid vs List View */
+.job-container.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Buttons */
+.load-more-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+/* Modal Popup */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 { margin-top: 0; }
+.modal-stats { margin: 15px 0; font-weight: bold; color: #555; }
+.close-btn { margin-top: 20px; padding: 8px 16px; cursor: pointer;}
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  padding: 15px 20px;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover, .nav-btn.active {
+  background: white;
+  color: #333;
+}
+
+.view-toggles {
+  background: #555;
+  padding: 2px;
+  border-radius: 4px;
+  display: flex;
+}
+
+.view-toggles button {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.view-toggles button.active {
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Drawer & Layout (Existing styles) */
+.drawer {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-drawer {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.saved-drawer {
+  background-color: #eef7ff;
+  border: 2px solid #007bff;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.search-input { flex-grow: 1; padding: 8px; }
+.range-filters { display: flex; gap: 30px; }
+.range-group { display: flex; flex-direction: column; }
+
+/* Grid vs List */
+.job-container.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: white; padding: 30px; border-radius: 10px;
+  width: 90%; max-width: 500px;
+}
+.close-btn { margin-top: 20px; padding: 8px 16px; cursor: pointer; }
+
+.nav-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer; /* Makes it look like a link */
+  transition: opacity 0.2s;
+}
+
+.nav-brand:hover {
+  opacity: 0.8;
+}

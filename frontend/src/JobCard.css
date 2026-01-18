@@ -1,0 +1,146 @@
+.job-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures uniform height in grid */
+  min-height: 200px;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #007bff;
+}
+
+/* Header: Logo + Company */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes the logo circular */
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Tech Stack Badges */
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-badge {
+  background-color: #f0f4f8;
+  color: #007bff;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Footer: View Text + Buttons */
+/* ... keep your existing header and tech-stack styles ... */
+
+/* Footer: View Text + Buttons */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.view-more-text {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.job-card:hover .view-more-text {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* NEW BUTTON STYLES */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 20px; /* Pill shape */
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Save Button Styling */
+.save-btn {
+  background-color: #f8f9fa;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.save-btn:hover {
+  background-color: #ffeef0;
+  border-color: #ffc107;
+  color: #d63384;
+}
+
+.save-btn.active {
+  background-color: #ffeef0;
+  color: #d63384; /* Pink/Red for heart */
+  border-color: #f5c2c7;
+}
+
+/* Apply Button Styling */
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.apply-btn.active {
+  background-color: #28a745; /* Green for Applied */
+  cursor: default;
+  box-shadow: none;
+}
+
+.apply-btn:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}

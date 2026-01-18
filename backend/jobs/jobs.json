@@ -1,0 +1,917 @@
+[
+    {
+        "id": 1,
+        "title": "UI/UX Designer",
+        "company": "SoftServe",
+        "location": "Mumbai",
+        "salary_min": 1000000,
+        "salary_max": 1600000,
+        "experience": 6,
+        "skills": [
+            "Python",
+            "Node.js",
+            "Figma",
+            "Docker"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2026-01-13",
+        "match_score": 81
+    },
+    {
+        "id": 2,
+        "title": "DevOps Engineer",
+        "company": "FutureSystems",
+        "location": "Delhi",
+        "salary_min": 1100000,
+        "salary_max": 2100000,
+        "experience": 8,
+        "skills": [
+            "Figma",
+            "React",
+            "AWS",
+            "Python",
+            "SQL"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-25",
+        "match_score": 82
+    },
+    {
+        "id": 3,
+        "title": "Full Stack Developer",
+        "company": "FutureSystems",
+        "location": "Bangalore",
+        "salary_min": 300000,
+        "salary_max": 1200000,
+        "experience": 6,
+        "skills": [
+            "TypeScript",
+            "Node.js",
+            "SQL",
+            "Docker",
+            "React"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2025-12-22",
+        "match_score": 92
+    },
+    {
+        "id": 4,
+        "title": "DevOps Engineer",
+        "company": "DataMinds",
+        "location": "Mumbai",
+        "salary_min": 800000,
+        "salary_max": 1300000,
+        "experience": 0,
+        "skills": [
+            "TypeScript",
+            "Figma",
+            "Django",
+            "AWS"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2025-12-23",
+        "match_score": 77
+    },
+    {
+        "id": 5,
+        "title": "Backend Engineer",
+        "company": "TechFlow",
+        "location": "Bangalore",
+        "salary_min": 300000,
+        "salary_max": 900000,
+        "experience": 2,
+        "skills": [
+            "Node.js",
+            "JavaScript",
+            "React",
+            "Figma",
+            "Python",
+            "Django"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-11",
+        "match_score": 91
+    },
+    {
+        "id": 6,
+        "title": "Data Scientist",
+        "company": "InnovateX",
+        "location": "Pune",
+        "salary_min": 400000,
+        "salary_max": 1400000,
+        "experience": 6,
+        "skills": [
+            "Node.js",
+            "AWS",
+            "JavaScript",
+            "Figma",
+            "SQL",
+            "TypeScript"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2025-12-19",
+        "match_score": 96
+    },
+    {
+        "id": 7,
+        "title": "Frontend Developer",
+        "company": "DataMinds",
+        "location": "Pune",
+        "salary_min": 500000,
+        "salary_max": 900000,
+        "experience": 8,
+        "skills": [
+            "Python",
+            "Node.js",
+            "Django"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-14",
+        "match_score": 77
+    },
+    {
+        "id": 8,
+        "title": "Frontend Developer",
+        "company": "InnovateX",
+        "location": "Chennai",
+        "salary_min": 1300000,
+        "salary_max": 1900000,
+        "experience": 0,
+        "skills": [
+            "Node.js",
+            "AWS",
+            "SQL"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2025-12-25",
+        "match_score": 91
+    },
+    {
+        "id": 9,
+        "title": "Product Manager",
+        "company": "WebSolutions",
+        "location": "Bangalore",
+        "salary_min": 1200000,
+        "salary_max": 1700000,
+        "experience": 1,
+        "skills": [
+            "SQL",
+            "JavaScript",
+            "Docker",
+            "Node.js",
+            "Django",
+            "TypeScript"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-10",
+        "match_score": 72
+    },
+    {
+        "id": 10,
+        "title": "Full Stack Developer",
+        "company": "DataMinds",
+        "location": "Remote",
+        "salary_min": 400000,
+        "salary_max": 700000,
+        "experience": 0,
+        "skills": [
+            "SQL",
+            "Figma",
+            "AWS"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2025-12-24",
+        "match_score": 82
+    },
+    {
+        "id": 11,
+        "title": "Frontend Developer",
+        "company": "FutureSystems",
+        "location": "Hyderabad",
+        "salary_min": 1100000,
+        "salary_max": 2100000,
+        "experience": 6,
+        "skills": [
+            "Django",
+            "JavaScript",
+            "SQL",
+            "Docker"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2025-12-29",
+        "match_score": 98
+    },
+    {
+        "id": 12,
+        "title": "Full Stack Developer",
+        "company": "InnovateX",
+        "location": "Hyderabad",
+        "salary_min": 1000000,
+        "salary_max": 1500000,
+        "experience": 2,
+        "skills": [
+            "Django",
+            "Docker",
+            "Node.js",
+            "Figma",
+            "React",
+            "TypeScript"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2026-01-17",
+        "match_score": 92
+    },
+    {
+        "id": 13,
+        "title": "Backend Engineer",
+        "company": "FutureSystems",
+        "location": "Chennai",
+        "salary_min": 700000,
+        "salary_max": 1300000,
+        "experience": 3,
+        "skills": [
+            "Node.js",
+            "Python",
+            "SQL",
+            "Django",
+            "TypeScript",
+            "Docker"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2025-12-23",
+        "match_score": 71
+    },
+    {
+        "id": 14,
+        "title": "DevOps Engineer",
+        "company": "CodeCrafters",
+        "location": "Delhi",
+        "salary_min": 300000,
+        "salary_max": 1100000,
+        "experience": 2,
+        "skills": [
+            "SQL",
+            "AWS",
+            "Docker",
+            "Node.js",
+            "React"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-28",
+        "match_score": 99
+    },
+    {
+        "id": 15,
+        "title": "Backend Engineer",
+        "company": "WebSolutions",
+        "location": "Chennai",
+        "salary_min": 600000,
+        "salary_max": 1300000,
+        "experience": 1,
+        "skills": [
+            "AWS",
+            "Docker",
+            "TypeScript"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-17",
+        "match_score": 83
+    },
+    {
+        "id": 16,
+        "title": "Full Stack Developer",
+        "company": "CloudNine",
+        "location": "Hyderabad",
+        "salary_min": 900000,
+        "salary_max": 1300000,
+        "experience": 1,
+        "skills": [
+            "AWS",
+            "Node.js",
+            "Figma",
+            "Django",
+            "React",
+            "Docker"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2026-01-03",
+        "match_score": 89
+    },
+    {
+        "id": 17,
+        "title": "Backend Engineer",
+        "company": "DataMinds",
+        "location": "Hyderabad",
+        "salary_min": 900000,
+        "salary_max": 1200000,
+        "experience": 2,
+        "skills": [
+            "SQL",
+            "Figma",
+            "Node.js",
+            "JavaScript"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2026-01-14",
+        "match_score": 68
+    },
+    {
+        "id": 18,
+        "title": "Frontend Developer",
+        "company": "CloudNine",
+        "location": "Bangalore",
+        "salary_min": 900000,
+        "salary_max": 1300000,
+        "experience": 6,
+        "skills": [
+            "SQL",
+            "Django",
+            "AWS",
+            "Docker",
+            "JavaScript"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2026-01-04",
+        "match_score": 70
+    },
+    {
+        "id": 19,
+        "title": "Backend Engineer",
+        "company": "InnovateX",
+        "location": "Mumbai",
+        "salary_min": 1300000,
+        "salary_max": 2200000,
+        "experience": 2,
+        "skills": [
+            "TypeScript",
+            "Docker",
+            "SQL",
+            "AWS"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2025-12-25",
+        "match_score": 88
+    },
+    {
+        "id": 20,
+        "title": "DevOps Engineer",
+        "company": "TechFlow",
+        "location": "Chennai",
+        "salary_min": 500000,
+        "salary_max": 1200000,
+        "experience": 3,
+        "skills": [
+            "Python",
+            "Docker",
+            "JavaScript"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-02",
+        "match_score": 85
+    },
+    {
+        "id": 21,
+        "title": "Data Scientist",
+        "company": "CodeCrafters",
+        "location": "Chennai",
+        "salary_min": 1400000,
+        "salary_max": 1800000,
+        "experience": 5,
+        "skills": [
+            "Docker",
+            "SQL",
+            "Node.js"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2025-12-31",
+        "match_score": 81
+    },
+    {
+        "id": 22,
+        "title": "QA Engineer",
+        "company": "FutureSystems",
+        "location": "Remote",
+        "salary_min": 1200000,
+        "salary_max": 1600000,
+        "experience": 6,
+        "skills": [
+            "Python",
+            "Docker",
+            "React"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-28",
+        "match_score": 73
+    },
+    {
+        "id": 23,
+        "title": "Backend Engineer",
+        "company": "SoftServe",
+        "location": "Delhi",
+        "salary_min": 800000,
+        "salary_max": 1100000,
+        "experience": 4,
+        "skills": [
+            "React",
+            "Docker",
+            "AWS",
+            "Figma",
+            "Django"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-16",
+        "match_score": 65
+    },
+    {
+        "id": 24,
+        "title": "Frontend Developer",
+        "company": "TechFlow",
+        "location": "Pune",
+        "salary_min": 800000,
+        "salary_max": 1100000,
+        "experience": 1,
+        "skills": [
+            "Figma",
+            "Docker",
+            "Node.js"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2025-12-31",
+        "match_score": 96
+    },
+    {
+        "id": 25,
+        "title": "Frontend Developer",
+        "company": "CodeCrafters",
+        "location": "Pune",
+        "salary_min": 1300000,
+        "salary_max": 1600000,
+        "experience": 8,
+        "skills": [
+            "Django",
+            "JavaScript",
+            "React"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2025-12-26",
+        "match_score": 61
+    },
+    {
+        "id": 26,
+        "title": "UI/UX Designer",
+        "company": "DataMinds",
+        "location": "Mumbai",
+        "salary_min": 700000,
+        "salary_max": 1600000,
+        "experience": 6,
+        "skills": [
+            "Docker",
+            "Django",
+            "Figma"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2026-01-11",
+        "match_score": 91
+    },
+    {
+        "id": 27,
+        "title": "Product Manager",
+        "company": "DataMinds",
+        "location": "Pune",
+        "salary_min": 500000,
+        "salary_max": 1500000,
+        "experience": 0,
+        "skills": [
+            "Figma",
+            "Django",
+            "JavaScript",
+            "Python",
+            "TypeScript",
+            "Node.js"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2025-12-19",
+        "match_score": 90
+    },
+    {
+        "id": 28,
+        "title": "Product Manager",
+        "company": "FutureSystems",
+        "location": "Hyderabad",
+        "salary_min": 800000,
+        "salary_max": 1500000,
+        "experience": 4,
+        "skills": [
+            "SQL",
+            "AWS",
+            "TypeScript",
+            "JavaScript"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-31",
+        "match_score": 74
+    },
+    {
+        "id": 29,
+        "title": "Backend Engineer",
+        "company": "CodeCrafters",
+        "location": "Chennai",
+        "salary_min": 300000,
+        "salary_max": 1000000,
+        "experience": 1,
+        "skills": [
+            "Django",
+            "Python",
+            "React"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2025-12-21",
+        "match_score": 68
+    },
+    {
+        "id": 30,
+        "title": "Product Manager",
+        "company": "FutureSystems",
+        "location": "Pune",
+        "salary_min": 600000,
+        "salary_max": 1000000,
+        "experience": 3,
+        "skills": [
+            "Docker",
+            "React",
+            "Node.js",
+            "AWS",
+            "Figma",
+            "TypeScript"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-23",
+        "match_score": 60
+    },
+    {
+        "id": 31,
+        "title": "Frontend Developer",
+        "company": "FutureSystems",
+        "location": "Chennai",
+        "salary_min": 1200000,
+        "salary_max": 1900000,
+        "experience": 1,
+        "skills": [
+            "Python",
+            "Node.js",
+            "Docker"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2025-12-30",
+        "match_score": 66
+    },
+    {
+        "id": 32,
+        "title": "Data Scientist",
+        "company": "CloudNine",
+        "location": "Remote",
+        "salary_min": 900000,
+        "salary_max": 1100000,
+        "experience": 2,
+        "skills": [
+            "Docker",
+            "Figma",
+            "Python",
+            "SQL",
+            "JavaScript"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-07",
+        "match_score": 71
+    },
+    {
+        "id": 33,
+        "title": "Data Scientist",
+        "company": "WebSolutions",
+        "location": "Mumbai",
+        "salary_min": 900000,
+        "salary_max": 1600000,
+        "experience": 0,
+        "skills": [
+            "Django",
+            "Python",
+            "Docker",
+            "Figma"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2025-12-31",
+        "match_score": 61
+    },
+    {
+        "id": 34,
+        "title": "DevOps Engineer",
+        "company": "CloudNine",
+        "location": "Bangalore",
+        "salary_min": 300000,
+        "salary_max": 600000,
+        "experience": 8,
+        "skills": [
+            "Python",
+            "Node.js",
+            "Docker",
+            "React"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2026-01-13",
+        "match_score": 68
+    },
+    {
+        "id": 35,
+        "title": "QA Engineer",
+        "company": "TechFlow",
+        "location": "Remote",
+        "salary_min": 700000,
+        "salary_max": 1200000,
+        "experience": 8,
+        "skills": [
+            "Docker",
+            "TypeScript",
+            "React",
+            "Figma",
+            "Python"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-24",
+        "match_score": 63
+    },
+    {
+        "id": 36,
+        "title": "UI/UX Designer",
+        "company": "WebSolutions",
+        "location": "Mumbai",
+        "salary_min": 1400000,
+        "salary_max": 2300000,
+        "experience": 2,
+        "skills": [
+            "SQL",
+            "Node.js",
+            "Docker",
+            "Python",
+            "AWS",
+            "TypeScript"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2025-12-20",
+        "match_score": 74
+    },
+    {
+        "id": 37,
+        "title": "UI/UX Designer",
+        "company": "DataMinds",
+        "location": "Remote",
+        "salary_min": 300000,
+        "salary_max": 1200000,
+        "experience": 6,
+        "skills": [
+            "Docker",
+            "SQL",
+            "AWS",
+            "JavaScript"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2026-01-01",
+        "match_score": 87
+    },
+    {
+        "id": 38,
+        "title": "Frontend Developer",
+        "company": "DataMinds",
+        "location": "Remote",
+        "salary_min": 900000,
+        "salary_max": 1900000,
+        "experience": 1,
+        "skills": [
+            "React",
+            "AWS",
+            "TypeScript",
+            "Django"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-19",
+        "match_score": 94
+    },
+    {
+        "id": 39,
+        "title": "Backend Engineer",
+        "company": "TechFlow",
+        "location": "Chennai",
+        "salary_min": 1100000,
+        "salary_max": 1700000,
+        "experience": 4,
+        "skills": [
+            "Figma",
+            "AWS",
+            "React",
+            "Docker"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-05",
+        "match_score": 64
+    },
+    {
+        "id": 40,
+        "title": "Full Stack Developer",
+        "company": "CodeCrafters",
+        "location": "Mumbai",
+        "salary_min": 1300000,
+        "salary_max": 2100000,
+        "experience": 1,
+        "skills": [
+            "Node.js",
+            "JavaScript",
+            "SQL"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2025-12-22",
+        "match_score": 84
+    },
+    {
+        "id": 41,
+        "title": "Frontend Developer",
+        "company": "TechFlow",
+        "location": "Remote",
+        "salary_min": 1500000,
+        "salary_max": 2400000,
+        "experience": 7,
+        "skills": [
+            "Node.js",
+            "Python",
+            "Docker"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2026-01-06",
+        "match_score": 92
+    },
+    {
+        "id": 42,
+        "title": "Frontend Developer",
+        "company": "DataMinds",
+        "location": "Hyderabad",
+        "salary_min": 1000000,
+        "salary_max": 1800000,
+        "experience": 8,
+        "skills": [
+            "Docker",
+            "Django",
+            "React"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2026-01-12",
+        "match_score": 95
+    },
+    {
+        "id": 43,
+        "title": "QA Engineer",
+        "company": "CodeCrafters",
+        "location": "Mumbai",
+        "salary_min": 1300000,
+        "salary_max": 2200000,
+        "experience": 1,
+        "skills": [
+            "AWS",
+            "Figma",
+            "React",
+            "Docker",
+            "TypeScript"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2026-01-10",
+        "match_score": 65
+    },
+    {
+        "id": 44,
+        "title": "Backend Engineer",
+        "company": "DataMinds",
+        "location": "Bangalore",
+        "salary_min": 1300000,
+        "salary_max": 2000000,
+        "experience": 3,
+        "skills": [
+            "Python",
+            "AWS",
+            "SQL",
+            "React",
+            "Django",
+            "Figma"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2026-01-05",
+        "match_score": 61
+    },
+    {
+        "id": 45,
+        "title": "Frontend Developer",
+        "company": "CloudNine",
+        "location": "Mumbai",
+        "salary_min": 700000,
+        "salary_max": 1300000,
+        "experience": 6,
+        "skills": [
+            "TypeScript",
+            "JavaScript",
+            "Python",
+            "React",
+            "Django"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2026-01-05",
+        "match_score": 87
+    },
+    {
+        "id": 46,
+        "title": "Full Stack Developer",
+        "company": "FutureSystems",
+        "location": "Remote",
+        "salary_min": 900000,
+        "salary_max": 1400000,
+        "experience": 4,
+        "skills": [
+            "Django",
+            "React",
+            "TypeScript"
+        ],
+        "job_type": "Full-time",
+        "posted_date": "2026-01-09",
+        "match_score": 76
+    },
+    {
+        "id": 47,
+        "title": "Backend Engineer",
+        "company": "CodeCrafters",
+        "location": "Chennai",
+        "salary_min": 900000,
+        "salary_max": 1800000,
+        "experience": 7,
+        "skills": [
+            "TypeScript",
+            "Django",
+            "AWS",
+            "Python",
+            "Node.js",
+            "Docker"
+        ],
+        "job_type": "Hybrid",
+        "posted_date": "2025-12-19",
+        "match_score": 87
+    },
+    {
+        "id": 48,
+        "title": "Backend Engineer",
+        "company": "DataMinds",
+        "location": "Hyderabad",
+        "salary_min": 300000,
+        "salary_max": 500000,
+        "experience": 6,
+        "skills": [
+            "Figma",
+            "Django",
+            "SQL"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2026-01-04",
+        "match_score": 79
+    },
+    {
+        "id": 49,
+        "title": "DevOps Engineer",
+        "company": "FutureSystems",
+        "location": "Hyderabad",
+        "salary_min": 1300000,
+        "salary_max": 1800000,
+        "experience": 6,
+        "skills": [
+            "Figma",
+            "AWS",
+            "Python",
+            "SQL"
+        ],
+        "job_type": "Remote",
+        "posted_date": "2026-01-08",
+        "match_score": 68
+    },
+    {
+        "id": 50,
+        "title": "QA Engineer",
+        "company": "CodeCrafters",
+        "location": "Mumbai",
+        "salary_min": 900000,
+        "salary_max": 1500000,
+        "experience": 0,
+        "skills": [
+            "Docker",
+            "Django",
+            "SQL",
+            "Node.js",
+            "Python"
+        ],
+        "job_type": "Part-time",
+        "posted_date": "2025-12-24",
+        "match_score": 95
+    }
+]

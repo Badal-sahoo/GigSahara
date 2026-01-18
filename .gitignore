@@ -1,0 +1,25 @@
+# --- Python / Django ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+.env
+venv/
+env/
+.pytest_cache/
+
+# --- Node / React ---
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
+.DS_Store
+
+# --- Project Specific ---
+# We generally ignore generated media, but keep public assets
+frontend/dist/
+
+# Optional: If you want to keep your jobs data private or auto-generated
+# jobs/jobs.json
